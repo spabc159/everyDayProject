@@ -1,0 +1,41 @@
+*{
+	font-size: 15px;
+}
+.box{
+	width:500px; 
+	height:200px; 
+	display:flex;
+	justify-content:center; /*内容水平居中 */
+	align-items:center; /*内容垂直居中 */
+	border: 1px solid #444;
+}
+
+
+.promoted{
+	background: rgba(0,0,0,.1);
+}
+
+.box li{
+	float: left;
+	position: relative;
+	padding: 5px 0px 0px 10px;
+	width: 120px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.anniu{
+	clear: both;
+	padding-top: 5px;
+	
+	position: absolute;
+   left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+}
+
+.showMore{
+	/*position: absolute;*/
+	/*display: block;*/
+	margin: 0px auto;
+}
