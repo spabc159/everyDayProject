@@ -1,0 +1,14 @@
+/*body{
+	font:normal 12px/17px Arial;
+}
+div*/{
+    padding:2px;
+} 
+input, textarea { 
+	 width: 12em; 
+	 border: 1px solid #888;
+}
+.focus { 
+	 border: 1px solid #f00;
+	 background: #fcc;
+} 
