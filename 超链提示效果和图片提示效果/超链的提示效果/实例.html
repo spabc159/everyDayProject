@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head runat="server"> 
+	<title></title> 
+	<style type="text/css"> 
+	#tooltip 
+	{ 
+		position:absolute; 
+		border:1px solid #333; 
+		background:#f7f5d1; 
+		padding:1px; 
+		color:#333; 
+		display:none; 
+	} 
+</style> 
+<script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script> 
+<script language="javascript" type="text/javascript"> 
+	$(function () { 
+var x = 10; //tooltip偏移鼠标的横坐标 
+var y = 20; //tooptip偏移鼠标的纵坐标 
+var myTitle; 
+//1. 鼠标移至新闻，去掉系统默认的tooltip，自定义tooltip 
+//2. 鼠标移出新闻，还原系统默认的tooltip，移除自定义的tooltip 
+//3. 鼠标在新闻上移动，设置自定义的tooltip的位置 
+$("a.tooltip").mouseover(function (e) { 
+	myTitle = this.title; 
+	this.title = ""; 
+	var tooltip = "<div id='tooltip' style='background:lightblue;'>" + myTitle + "</div>"; 
+	$("body").append(tooltip); 
+	$("#tooltip").css({ 
+		"top": (e.pageY + y) + "px", 
+		"left": (e.pageX + x) + "px" 
+	}).show("fast"); 
+}).mouseout(function () { 
+	this.title = myTitle; 
+	$("#tooltip").remove(); 
+}).mousemove(function (e) { 
+	$("#tooltip").css({ 
+		"top": (e.pageY + y) + "px", 
+		"left": (e.pageX + x) + "px" 
+	}); 
+}); 
+}); 
+</script> 
+</head> 
+<body> 
+	<form id="form1" runat="server"> 
+		<div class="scrollNews" > 
+			<ul> 
+				<li><a href="#" class="tooltip" title="甜美">甜美宽松毛衣今秋一定红.</a></li> 
+				<li><a href="#" class="tooltip" title="秋装百搭小马甲不到50元.">秋装百搭小马甲不到50元.</a></li> 
+				<li><a href="#" class="tooltip" title="修身韩版小西装万人疯抢.">修身韩版小西装万人疯抢.</a></li> 
+				<li><a href="#" class="tooltip" title="夏末雪纺店主含泪大甩卖.">夏末雪纺店主含泪大甩卖.</a></li> 
+				<li><a href="#" class="tooltip" title="瑞丽都疯狂推荐的秋装.">瑞丽都疯狂推荐的秋装.</a></li> 
+				<li><a href="#" class="tooltip" title="48元长款针织小开衫卖疯啦.">48元长款针织小开衫卖疯啦.</a></li> 
+				<li><a href="#" class="tooltip" title="长袖雪纺衫单穿内搭都超美.">长袖雪纺衫单穿内搭都超美.</a></li> 
+			</ul> 
+		</div> 
+	</form> 
+</body> 
+</html> 

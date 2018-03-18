@@ -1,0 +1,41 @@
+ul{
+	display:table;
+	height:auto;
+	margin:0 auto;
+}
+
+li{
+	float: left;
+	
+}
+li img{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+img{
+	border-radius: 3px;
+}
+
+
+/*p a{
+		display: block;
+		width:150px;
+		height:50px;
+		line-height:50px;
+		background:#FF3366;
+		color:#fff;
+		border-radius: 3px;
+		text-align: center;
+		}*/
+#tooltip{
+	position:absolute;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	border:1px solid #ccc;
+	text-align: center;
+	box-shadow: 1px 1px 2px #ccc;
+	background:#fff;
+	border-radius:5px;
+}
