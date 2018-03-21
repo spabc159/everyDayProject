@@ -1,0 +1,277 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+
+}
+
+body{
+	background-color: #f5f5f5;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+.top_content{
+	width: 1000px;
+	margin: 0 auto;	
+}
+
+.top_content ul{
+	float: right;
+}
+
+
+.box1{
+	height: 40px;
+	margin: 0 auto;
+}
+
+
+.container{
+	width: 1000px;
+}
+
+
+.nav_mid{
+	width: 100%;
+	height: 40px;
+	background-color: #730000;
+	
+}
+.nav_mid{
+	float: left;
+	height: 50px;
+}
+
+.nav_mid .nav_mid_left ul li{
+	float: left;
+	list-style-type: none;
+	width: 100px;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 25px;
+}
+
+.nav_mid .nav_mid_left a:link, .nav_mid .nav_mid_left a:visited{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+
+.nav_mid .nav_mid_left a:hover, .nav_mid .nav_mid_left a:active{
+	text-decoration: none;
+	color:#ebff00;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+
+.nav_mid_right{
+	width: 240px;
+	height: 30px;
+	float: right;
+}
+form{
+	padding-bottom: 5px;
+}
+
+.search_txt{
+	width: 180px;
+	height: 30px;
+	border-radius: 4px;
+	    border-width: 1px;
+}
+button.btn{
+	width: 40px;
+	height:30px;
+	font-size: 14px;
+	padding: 0;
+}
+
+.ad{
+	margin-top: 3px;
+	width: 100%;
+	height: 310px;
+	overflow: hidden;
+	visibility:hidden;
+}
+.main{
+	height: 250px;
+	margin-top: 5px;
+
+}
+.news, .course, .sidebar{
+	float: left;
+}
+
+.news{
+	height: 250px;
+	width: 340px;
+	border: 1px solid #E8E8E8;
+	
+}
+
+.news .title,.course .title, .sidebar .title{
+	height: 35px;
+	border-bottom: 2px solid #E8E8E8;
+
+}
+
+.news .title h2.title_left, .course .title h2, .sidebar .title h2{
+	margin: 0;
+	line-height: 35px;
+	padding-left: 20px;
+}
+.news .title span.title_right ,.course .title span.title_right{
+	width: 20%;
+	float: right;
+	line-height: 35px;
+}
+
+.news .title span.title_right a , .course .title span.title_right a ,.sidebar .title{
+	text-decoration: none;
+	color: #999;
+}
+
+.news .title h2,.course .title h2,.sidebar .title h2{
+	width: 70%;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: bold;
+	color: #786f66;
+	float: left;
+}
+
+.news .pic_news{
+	/*height: 80px;*/
+	margin-top: 10px;
+}
+
+.news .pic_news img{
+	height: 80px;
+	float: left;
+	margin: 0 5px;
+}
+.news  h2, .course  h2{
+	font-size: 14px;
+	font-weight: 800;
+	margin: 0;
+}
+.news .pic_news p{
+	margin-top: 5px;
+	line-height: 16px;
+}
+.news .pic_news a, .course .course_pic a{
+	color: #c50400;
+	text-decoration: none;
+}
+.news .title .news_list{
+	margin-top: 20px;
+}
+.news .news_list ul li{
+	padding-left: 5px;
+	margin: 8px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.news .news_list a:link ,.news .news_list a:visited{
+	text-decoration: none;
+	color:#000;
+}
+
+.news .news_list a:hover ,.news .news_list a:active{
+	text-decoration: none;
+	color:#c50400;
+}
+.news .news_list span{
+	float: right;
+	color: #999;
+}
+
+
+.course{
+	height: 250px;
+	width: 410px;
+	border: 1px solid #E8E8E8;
+	margin: 0 7px;
+}
+
+.course .course_pic{
+	margin-top: 10px;
+}
+.course .course_pic img{
+	height: 120px;
+	float: left;
+	margin:  0 5px;
+}
+.course .course_pic p{
+	line-height: 19px;
+}
+.course .course_type{
+	height: 37px;
+	width: 372px;
+	margin: 20px auto;
+}
+
+.course .course_type li{
+	float: left;
+	line-height: 37px;
+	margin: 0 15px;
+	text-align: center;
+}
+
+.sidebar{
+	height: 250px;
+	width: 200px;
+	
+}
+.sidebar .sidebar_ad{
+	height: 55px;
+	border: 1px solid #E8E8E8;
+	margin-top: 5px;
+}
+
+.sidebar .sidebar_ad img{
+	height: 55px;
+	width: 200px
+}
+
+.sidebar .video{
+	height: 185px;
+	border: 1px solid #E8E8E8;
+}
+
+
+.sidebar .video .vido_content{
+	height: 150px;
+}
+
+.footer{
+	background-color: #E8E8E8;
+	margin-top: 10px;
+	height: 200px
+}
+.footer_inner{
+	margin: 0 auto;
+	padding-top: 20px
+}
+
+.footer .footer_inner ul li{
+	float: left;
+	width: 240px;
+	text-align: center;
+	line-height: 30px;
+	font-family: "微软雅黑";
+}
+
+.footer .footer_inner a{
+	color: #999;
+	font-size: 18px;
+}
+.footer .footer_inner  li ul li a{
+	font-size: 14px;
+}
